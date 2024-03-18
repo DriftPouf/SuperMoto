@@ -13,14 +13,21 @@
 
     body {
         min-height: 100vh;
-        background: url(vehicles-bmw_r_ninet-motocycle-955257.jpeg) no-repeat;
+        background: url() no-repeat;
         background-size: cover;
         background-position: center;
 }
 
+/*========Variable========*/
+:root {
+    /*========Colors========*/
+    --first-color : hsl(219,69%,56%);
+    --second-color-alt : #ffffff;
+}
+
 /*========header et navbar========*/
     .header {
-        position: absolute;
+        position: sticky;
         top: 0;
         left: 0;
         width: 90%;
@@ -89,16 +96,33 @@
 
     /*========Main========*/
 
+        /*========Home========*/
+
+        .home {
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .home_section {
+            position: relative;
+            padding-top: 3rem;
+            row-gap: 3rem;
+        }
+
+        .home_box {
+            text-align: center;
+        }
+
     /*========Footer========*/
     .footer {
-        position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
         padding: 20px 100px;
         background: black;
         display: flex;
-        align-items: center;
+        align-items: center;    
         z-index: 100;
         color: white;
     }
