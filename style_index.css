@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /*========All========*/
     @font-face {
         font-family: 'Poppins';
-        src: url(Poppins-Regular.ttf);
+        src: url(Poppins.ttf);
     }
 
     *{
@@ -110,9 +112,153 @@
             row-gap: 3rem;
         }
 
-        .home_box {
+        .Slogan_box {
             text-align: center;
         }
+
+        .Slogan {
+            font-size: 40px;
+            color: black;
+            margin-bottom: 1rem;
+        }
+
+        .Slogan_soustitre {
+            font-size: 15px;
+            color: black;
+            margin-bottom: .25rem;
+        }
+
+        .Slogan_Type {
+            font-size: 15px;
+            color: gray;
+            font-weight: 400;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .imgageMT10 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            height: 400px;
+        }
+
+        .home_moto{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap:3rem;
+            margin-bottom: 2rem;
+        }
+
+        .home_moto_name {
+            font-size: .625rem;
+            font-weight: 400;
+            color: gray;
+        }
+
+        .home_moto_data {
+            text-align: center;
+        }
+
+        .home_moto_number{
+            font-size: 25px;
+            margin-bottom: .25rem;
+        }
+
+        .home_moto_icon {
+            background-color: white;
+            border-radius: 50%;
+            padding: .376rem;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: .825rem;
+            margin-bottom: .75rem;
+        }
+        
+        .HomeBtn {
+            position: relative;
+            border:2px solid cornflowerblue;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-self: center;
+            font-size: 15px;
+            color: black;
+            text-decoration: none;
+            font-weight: 10px;
+        }
+
+
+
+
+        .homeBtnCenter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-self: center;
+        }
+
+        .HomeBtn::before {
+            content: '';
+            border: 2px solid cornflowerblue;
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            border-radius: 50%;
+            box-shadow: 0 0 12px cornflowerblue;
+            transition: .5s;
+            animation: button 3s infinite;
+        }
+
+        @keyframes button {
+            0%{
+                box-shadow: 0 0 12px cornflowerblue;
+            }
+            50%{
+                box-shadow: 0 0 24px cornflowerblue;
+            }
+        }
+
+        .shape {
+            background-color: black;
+            filter: blur(150px);
+            border-radius: 50px;
+        }
+
+        .shape_shape-big {
+            width: 400px;
+            height: 400px;
+        }
+
+        /*========About========*/
+        .AboutBox {
+            row-gap: 6rem;
+        }
+
+        .AboutGroup {
+            position: relative;
+            float: left;
+        }
+
+        .aboutImg {
+            margin-top:50px ;
+            width: 700px;
+            border-radius: .5rem;
+            position: relative;
+        }
+
+        .TitleAboutData {
+            text-align: initial;
+            font-size: 25px;
+            margin-bottom: 2rem;
+        }
+
+
 
     /*========Footer========*/
     .footer {
